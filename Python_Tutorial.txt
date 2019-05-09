@@ -1,0 +1,172 @@
+Python:
+
+Variables:
+
+greeting = "Hello"
+_greenting = "Hello"
+greeting1 = "Hello"
+
+print(greeting)
+
+Numbers:
+
+a = 2
+b = 3
+
+a + b
+
+print (a + b)
+
+age = input("Enter your age: ")
+
+new_age = int(age) + 50
+
+print(new_age)
+
+
+STRINGS:
+
+c = "Hi There"
+
+c.replace("e", "i") -- methods
+
+dir(c) - to see all available methods
+
+help("".replace) - to check what method
+
+
+INDEXING/SPLITTING:
+
+c = "Hi There!"
+
+c[3]
+'T'
+type(c[3])
+
+
+
+
+LIST:
+-- can contain other data types
+-- used square brackets []
+-- every items in the LIST have its own data type
+
+c = ["H", 2, "Hello"]
+
+c[1]
+
+c.append(2)
+c.append("test")
+
+dir(list) - show all the methods
+
+help(c.remove) - help built in function.
+
+
+TUPLES: - very similar to list but tuples are not mutable.
+-- tuples may contain diferent data types.
+-- tuples start with open and close parenthesis.
+
+t = ("Hello", 3, 4.6)
+t[-1]
+
+
+
+DICTIONARIES:
+-- to create dictionary {}
+-- un ordered collection of items.
+
+d = {"Name":"John", "Surname":"Smith"}
+
+Name and Surname are KEYS
+John and Smith are VALUES
+
+
+FUNCTION:
+-- to create function "def" keyword
+
+print(1) -- this is function
+
+def currency_converter(rate,euros):
+    dollars=euros*rate
+    return dollars
+
+print(currency_converter(100,1000))
+
+CONDITIONAL:
+
+a = 5
+
+if a < 5:
+  print("less than 5")
+elif a == 5:
+  print("equal to 5")
+else:
+  print("greater than 5")
+
+
+def age_foo(age):
+  new_age = age + 50
+  return new_age
+
+age = float(input("Enter your age: "))
+
+if age < 150:
+  print(age_foo(age))
+else:
+  print("How is that possible?")
+
+
+FOR LOOP:
+
+emails=['me@gmail.com','you@hotmail.com','they@gmail.com']
+
+for item in emails:
+    if 'gmail' in item:
+        print(item)
+
+
+USER INPUT:
+
+def currency_converter(rate,euros):
+    dollars=euros*rate
+    return dollars
+
+euros=float(input("Enter your euro: "))
+rate=float(input("Enter the rate: "))
+
+print(currency_converter(euros,rate))
+
+
+WHILE LOOPS:
+
+password=""
+while password != 'python123':
+    password=input("Enter password: ")
+    if password == 'python123':
+        print("You are logged in!")
+    else:
+        print("Sorry, try again!")
+
+FOR LOOP WITH MULTIPLE LISTS:
+
+names=['james','john','jack']
+email_domains=['gmail','hotmail','yahoo']
+
+for i,j in zip(names, email_domains):
+    print(i,j)
+    #print(i+"@"+j+".com")
+
+
+
+
+
+
+
+
+
+
+
+Notes:
+
+"2" + "3" = '23' concatenation
