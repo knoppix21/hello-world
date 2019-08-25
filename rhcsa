@@ -1,0 +1,38 @@
+
+
+Redirecting and error output.
+
+:# asdfsdfds 2> badcommand.txt		# 2 standard error
+
+:# asdfsdfds 2> /dev/null		# is kind of a kernel location for empty information, info is lost.
+
+./command &> output.out		# Redirect the standard error and standard output to a file.
+
+:# sdfsdfsdfsd 2>&1		# Redirects the standard error to standard output
+
+
+## Use grep and Regular Expressions to Analyze Text:
+
+grep '^#' /etc/ssh/sshd_config		# Search first # on the file sshd_config
+
+grep -i # non case sensitive
+grep -v # select do not much with the patters
+grep 'world$' # matches the words that on the end of the line
+grep [lL]inuxacademy file # matches lower or upper letter "l/L"
+grep '[^linux]' # negate or do not much.
+
+# Basic regex
+
+grep -E '(a)+' file		# -E means extended regex, "+" means matching 1 or more times.
+grep 'l...x' file
+
+note: check other tut for regex
+
+
+
+
+
+
+
+
+
